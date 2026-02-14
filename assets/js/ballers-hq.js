@@ -17,11 +17,11 @@ muteToggleButton.addEventListener('click', () => {
 
 function updateMuteButtonUI() {
     if (isMuted) {
-        muteIconSvg.style.display = 'block';   // Show muted icon
-        unmuteIconSvg.style.display = 'none'; // Hide unmuted icon
-    } else {
         muteIconSvg.style.display = 'none';   // Hide muted icon
-        unmuteIconSvg.style.display = 'block'; // Show unmuted icon
+        unmuteIconSvg.style.display = 'block'; // Show unmuted ico
+    } else {
+        muteIconSvg.style.display = 'block';   // Show muted icon
+        unmuteIconSvg.style.display = 'none'; // Hide unmuted iconn
     }
 }
 
