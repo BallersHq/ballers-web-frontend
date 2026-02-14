@@ -7,7 +7,8 @@
 body {
     font-family: Rethink Sans, serif;
     background-color: #EAECF0;
-    max-width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 img{
@@ -251,6 +252,8 @@ video{
     border-bottom-left-radius: 32px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 16px;
+
 }
 #ballersVideo {
     width: 100%;
@@ -295,9 +298,9 @@ video{
 .third-page-container {
     display: flex;
     flex-flow: column;
-    height: 902px;
+    height: 100%;
     border-bottom-width: 1px;
-    margin: 114px 0 0 56px;
+    margin: 114px 0 16px 56px;
     overflow: hidden;
 }
 
@@ -475,6 +478,7 @@ video{
     display: flex;
     border-radius: 32px;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .fourth-page-body-icon-container {
@@ -560,6 +564,7 @@ video{
     background-color: #101828;
     display: flex;
     border-radius: 32px;
+    margin-bottom: 16px;
 }
 
 .sixth-page-image img {
@@ -700,8 +705,7 @@ fieldset {
 }
 
 .sixth-page-form-email-number-container span {
-    margin-right: 12px;
-    margin-left: 12px;
+   margin: auto;
 }
 
 .sixth-page-form-email-number {
@@ -731,6 +735,7 @@ input[type="email"], input[type="tel"] {
 .sixth-page-form-email-number-container button {
     width: 134px;
     height: 64px;
+    margin-top: 16px;
     margin-right: 12px;
     margin-left: 15px;
     padding: 12px;
@@ -852,7 +857,8 @@ nav ul {
       display: flex;
       flex-flow: column;
       /* width: 343; */
-      height: 481;
+        margin: auto;
+      height: 100%;
       padding-right: 16px;
       padding-left: 16px;
       border-top-left-radius: 32px;
@@ -965,7 +971,7 @@ nav ul {
       line-height: 72px;
       color: #1D2939; */
       width: 100%;
-      height: 126px;
+      height: 100%;
       font-weight: 400;
       font-size: 32px;
       line-height: 100%;
@@ -991,7 +997,7 @@ nav ul {
       line-height: 100%;
       color: #1D2939; */
       width: 100%;
-      height: 63px;
+      height: 100%;
       font-weight: 400;
       font-size: 16px;
       line-height: 100%;
@@ -1086,10 +1092,10 @@ nav ul {
     .third-page-container {
       display: flex;
       flex-flow: column;
+        margin: auto;
       width: 100%;
-      height: 1028px;
-      padding-top: 114px;
-      padding-bottom: 114px;
+      height: 100%;
+
       border-bottom-width: 1px;
       /* border-bottom-width: 1px;
       margin: 114px 0 0 56px; */
@@ -1280,9 +1286,11 @@ nav ul {
     /* Fourth page styling*/
     .fourth-page-container {
       width: 100%;
-      height: 1426px;
+      height: 100%;
+
       margin-bottom: 16px;
-      padding: 130px 16px;
+      margin-top: 16px;
+      /*padding: 130px 16px;*/
       /* padding-top: 130px;
       padding-bottom: 130px; */
       background-color: #07160D;
@@ -1360,8 +1368,9 @@ nav ul {
 
     .fourth-page-icon-single {
       width: 100%;
-      height: 98px;
+      height: 100%;
       opacity: 1;
+        margin: auto;
     }
 
     .fourth-page-icon-single p {
@@ -1371,7 +1380,7 @@ nav ul {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      letter-spacing: 0%;
+      letter-spacing: 0;
     }
 
     .fourth-page-logo img {
@@ -1541,7 +1550,7 @@ nav ul {
 
     .sixth-page-form-email-number-container {
       width: 100%;
-      height: 259px;
+      height: 100%;
       opacity: 1;
       margin-top: 24px;
       display: flex;
@@ -1574,7 +1583,6 @@ nav ul {
     input[type="email"],
     input[type="tel"] {
       width: 100%;
-      height: 64px;
       color: #F9FAFB;
       background: #0D0D0D;
       border: none;
@@ -1645,10 +1653,13 @@ nav ul {
     .seventh-page-header-nav-bar .logo-icon-and-text {
       /* margin-right: 24px; */
       margin-bottom: 30px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
     }
 
     .seventh-page-nav-bar nav ul {
-      height: 21px;
+      height: 100%;
       display: flex;
     }
 
@@ -1662,8 +1673,8 @@ nav ul {
     }
 
     nav ul {
-      width: 249;
-      height: 21;
+      width: 100%;
+      height: 100%;
       opacity: 1;
       list-style-type: none;
     }
