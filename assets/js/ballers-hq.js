@@ -136,3 +136,27 @@ function subscribeToWaitingList() {
 }
 
 subscribeToWaitingList();
+
+const scrollContainer = document.querySelector(
+    '.third-page-second-section-cards-container'
+);
+
+const scrollLeftBtn = document.getElementById('scrollLeft');
+const scrollRightBtn = document.getElementById('scrollRight');
+
+// How far to scroll per click
+const SCROLL_AMOUNT = scrollContainer.clientWidth * 0.8;
+
+scrollLeftBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+        left: -SCROLL_AMOUNT,
+        behavior: 'smooth'
+    });
+});
+
+scrollRightBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({
+        left: SCROLL_AMOUNT,
+        behavior: 'smooth'
+    });
+});
