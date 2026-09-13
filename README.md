@@ -69,16 +69,16 @@ Point `ballershq.com` (and `www`) at the host through DNS in cPanel.
 - [ ] **Group funding:** the "Squad chip-in" section presents it as live. Turn on `BALLERS_FEATURE_GROUP_FUNDING` and make the fund screens reachable in the app. Paying for more than one spot is shown as live (my share / N spots / cover the rest, backend commit 75c8452).
 - [ ] **Peer ratings:** shown as a feature, but the app has no rating screens yet.
 
-### Content placeholders still in the page
+### Content defaults (decided 2026-09-13, change as needed)
 - [x] Launch date: 1 October 2026, Abuja (hero countdown + final CTA + FAQ; target `2026-10-01T00:00:00+01:00` in `data-launch`)
-- [ ] `[ARENA LOGO]` ×5 (founding arenas strip)
-- [ ] `[REFERRAL REWARD]` (₦500 is seeded in the backend; confirm who receives it)
-- [ ] `[EARLY-ACCESS PERK]` (final call to action)
-- [ ] `[WHATSAPP NUMBER]` (footer)
-- [ ] `[ARENA PRICING]` (FAQ; commission not decided)
-- [ ] `[CANCELLATION TIERS — confirm]` (FAQ; `application.yml` says 2h/50%, while code defaults and docs say 12h/70%)
-- [ ] Legal pages: Terms and Privacy link to the existing `terms-and-conditions.html` / `privacy.html`; Refund policy is still `#`
+- [x] Founding arenas strip: removed until real partner logos are available
+- [x] Referral reward: ₦500 to the referrer when the friend's first booking is confirmed (seeded `REFERRAL_REWARD` fee config)
+- [x] Final CTA perk: no promised perk; "be the first to know when bookings open in Abuja"
+- [x] Cancellation FAQ: matches live config (24h+ = 100% of court fee, under 24h = 50%, after start = 0; platform fee kept; arena cancel = full refund). Note the PRD's 12–24h/70% tier is NOT what production does
+- [x] Arena pricing FAQ: free to join and set up; pricing explained before the first booking (no commission stated)
+- [x] Refund policy link points to the FAQ
+- [ ] WhatsApp support number (footer comment marks the spot)
 
 ### Assets
-- [ ] `assets/img/og-image.png`: create a 1200×630 social preview image. The meta tags already point to it.
+- [x] `assets/img/og-image.png`: 1200×630 social preview image
 - [ ] Optional: a PNG `apple-touch-icon` (180×180).
