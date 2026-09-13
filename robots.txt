@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ballershq.com/sitemap.xml

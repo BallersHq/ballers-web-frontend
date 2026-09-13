@@ -1,303 +1,648 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/ballers-hq.css">
-    <title>Ballers HQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BallersHQ — Book courts, join games, split the bill in Lagos</title>
+  <meta name="description" content="Find and book verified sports courts near you in Lagos. Join public games for just your spot, split the bill with your squad, and walk in with a QR ticket. Join the BallersHQ waitlist.">
+  <link rel="canonical" href="https://ballershq.com/">
+  <meta name="theme-color" content="#0A0E14">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BallersHQ">
+  <meta property="og:url" content="https://ballershq.com/">
+  <meta property="og:title" content="BallersHQ — Book courts, join games, split the bill in Lagos">
+  <meta property="og:description" content="Find courts near you, join public games for just your spot, split the bill with your squad, and walk in with a QR ticket.">
+  <meta property="og:image" content="https://ballershq.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_NG">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ballershq">
+  <meta name="twitter:title" content="BallersHQ — Book courts, join games, split the bill in Lagos">
+  <meta name="twitter:description" content="Find courts near you, join public games for just your spot, and split the bill with your squad.">
+  <meta name="twitter:image" content="https://ballershq.com/assets/img/og-image.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BallersHQ",
+    "url": "https://ballershq.com/",
+    "logo": "https://ballershq.com/assets/img/logo.svg",
+    "email": "support@ballershq.com",
+    "areaServed": "Lagos, Nigeria",
+    "sameAs": ["https://www.instagram.com/ballershq"]
+  }
+  </script>
 </head>
 <body>
-<div class="main-container">
-    <div class="first-page-container">
-        <div class="first-page-navbar">
-            <a href="index.html">
-            <div class="logo-icon-and-text">
-                <img src="assets/images/bhq-logo-green-black-bg.jpg" alt="Baller HQ">
-                <span>BallersHQ</span>
-            </div>
-            </a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-            <div class="get-app-main-container">
-                <div class="get-app-text">Get App</div>
-                <div class="get-app-icon-container">
-                    <img class="get-app-icon" src="assets/images/arrow-narrow-up-right.svg" alt="Get app">
-                </div>
-            </div>
+<!-- Icon sprite -->
+<svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m6 12 4 4 8-9"/></symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-cal-x" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M10 13l4 4M14 13l-4 4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></symbol>
+  <symbol id="i-cal-plus" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M12 13v4M10 15h4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M4 12h16"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6 .9-4.35 4.2 1 6L12 16.8 6.65 19.6l1-6L3.3 9.4l6-.9z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 7h15a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a2 2 0 0 1 2-2h11"/><circle cx="16" cy="13.5" r="1.2"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10h18L12 4zM5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></symbol>
+  <symbol id="i-refund" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3L20 9M20 4v5h-5M20 12a8 8 0 0 1-14 5.3L4 15M4 20v-5h5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8"/></symbol>
+</svg>
 
-        </div>
-
-
-        <div class="first-page-body-container">
-            <div class="first-page-body-main-content">
-                <div class="first-page-body-text-area">
-                    <span class="first-page-body-main-text">Revolutionise Your Sports Experience with <span
-                            class="emphasis first-page-emphasis">Ballers</span> App</span>
-                    <span class="first-page-body-sub-text">Book sports sessions, manage arenas, and connect Nigeria’s
-                        sports community — all
-                        in one app.</span>
-                </div>
-                <div class="first-page-body-frame-container">
-                    <div class="first-page-body-top-frame">
-                        <img src="assets/images/Hand-drawn-accents.svg" alt="Frame">
-                        <span class="first-page-body-top-frame-text">All in one sports platform</span>
-                    </div>
-                    <div class="first-page-body-bottom-frame">
-                        <img src="assets/images/foot-on-ball.jpg" id="first-img" alt="Frame">
-                        <img src="assets/images/playing-tennis.jpg" alt="Frame">
-                        <img src="assets/images/people-playing-basketball.jpg" alt="Frame">
-
-                    </div>
-                </div>
-            </div>
-            <div class="first-page-body-get-app-buttons-container">
-                <img src="assets/images/google-play-icon-badge.svg" alt="Get App Download Button">
-                <img src="assets/images/mobile-app-store-badge.svg" alt="Get App Download Button">
-            </div>
-        </div>
-
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="nav__logo" href="#top" aria-label="BallersHQ home"><img src="assets/img/logo.svg" alt="BallersHQ" width="196" height="30"></a>
+    <ul class="nav__links">
+      <li><a href="#players">For players</a></li>
+      <li><a href="#arenas">For arenas</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav__actions">
+      <a class="btn btn--primary nav__join-lg" href="#waitlist">Join the waitlist</a>
+      <a class="btn btn--primary nav__join-sm" href="#waitlist">Join</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <svg class="ic ic--bold" width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
     </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#players">For players</a>
+    <a href="#chip-in">Squad chip-in</a>
+    <a href="#claim">Claim your slot</a>
+    <a href="#arenas">For arenas</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</header>
 
-<!--  Second page beginning   //-->
+<main id="main">
 
-    <div class="video-container">
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <svg class="hero__lines" viewBox="0 0 800 820" fill="none" stroke="#00E676" stroke-width="2" aria-hidden="true">
+      <rect x="40" y="60" width="760" height="700" rx="4"/>
+      <path d="M420 60v700"/>
+      <circle cx="420" cy="410" r="110"/>
+      <rect x="40" y="250" width="130" height="320"/>
+      <rect x="670" y="250" width="130" height="320"/>
+    </svg>
 
-        <video id="ballersVideo" poster="assets/images/BHQ-video-thumbnail.png" autoplay muted playsinline loop>
-            <source src="assets/videos/BHQ-resized-1366x720.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <button id="muteToggleButton" class="mute-button">
-            <img id="muteIconSvg" src="assets/images/unmute-icon.svg" alt="Mute">
-            <img id="unmuteIconSvg" src="assets/images/mute-icon.svg" alt="Mute">
-        </button>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="pill-live"><span class="dot"></span><span class="caps">Launching in Lagos · [LAUNCH DATE]</span></div>
+        <h1 class="h1" id="hero-title">Find a court.<br>Book it.<br><span class="text-green">Ball out.</span></h1>
+        <p class="lead lead--hero">No more WhatsApp back-and-forth, cash with no receipt, or turning up to a pitch someone else booked. Find courts near you, join public games for just your spot, and walk in with a QR ticket.</p>
+
+        <form class="waitlist js-waitlist" id="waitlist" novalidate data-form="hero">
+          <fieldset class="waitlist__top">
+            <legend class="waitlist__label">Get early access — I am a…</legend>
+            <div class="segmented">
+              <label><input type="radio" name="userType" value="BALLER" checked><span>Baller</span></label>
+              <label><input type="radio" name="userType" value="CLIENT"><span>Arena owner</span></label>
+            </div>
+          </fieldset>
+          <div class="waitlist__fields">
+            <div class="field--email">
+              <label class="sr-only" for="hero-email">Email address</label>
+              <input class="input" id="hero-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address" required>
+            </div>
+            <div class="field--phone">
+              <label class="sr-only" for="hero-phone">WhatsApp number (optional)</label>
+              <input class="input" id="hero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="WhatsApp (optional)">
+            </div>
+          </div>
+          <button class="btn btn--primary btn--lg btn--block" type="submit">
+            <span class="js-label">Join the waitlist</span>
+            <svg class="ic ic--bold" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="waitlist__note">We'll only message you about launch. No spam.</p>
+        </form>
+      </div>
+
+      <div class="hero__media" aria-hidden="true">
+        <div class="phone-glow"></div>
+        <div class="phone">
+          <div class="row-between">
+            <span class="phone__title">My booking</span>
+            <span class="caps phone__ref">BAL-2609-A7B3</span>
+          </div>
+          <div class="confirm-banner">
+            <span class="check-circle"><svg class="ic ic--heavy" width="18" height="18"><use href="#i-check"/></svg></span>
+            <div class="col-2"><span class="t-14 fw-7">Arena confirmed</span><span class="t-11 c-2">Your QR ticket is ready</span></div>
+          </div>
+          <div class="inner arena-card">
+            <div class="arena-card__media">
+              <svg viewBox="0 0 290 118" preserveAspectRatio="none" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"><path d="M20 110 70 40h150l50 70z"/><path d="M145 40v70"/><ellipse cx="145" cy="72" rx="26" ry="10"/></svg>
+              <span class="badge badge--xs badge--solid">Floodlit</span>
+            </div>
+            <div class="arena-card__body">
+              <div class="row-6"><span class="badge badge--sm badge--neutral c-cyan">5-a-side</span><span class="badge badge--sm badge--neutral">Astroturf</span></div>
+              <span class="t-16 fw-7">Surulere AstroTurf</span>
+              <span class="t-12 c-2">Sat 14 Sep · 8:00 – 9:00 PM · Pitch A</span>
+            </div>
+          </div>
+          <div class="qr-ticket">
+            <svg viewBox="0 0 21 21" shape-rendering="crispEdges" fill="#0A0E14"><path d="M0 0h7v7H0zM1 1v5h5V1zM2 2h3v3H2zM14 0h7v7h-7zm1 1v5h5V1zm1 1h3v3h-3zM0 14h7v7H0zm1 1v5h5v-5zm1 1h3v3H2zM8 0h2v2H8zM11 1h2v3h-2zM8 3h2v3H8zM9 8h3v2H9zM13 8h2v3h-2zM0 8h2v2H0zM3 8h3v2H3zM16 8h5v2h-5zM8 11h2v3H8zM11 12h3v2h-3zM15 12h2v2h-2zM18 11h3v3h-3zM8 15h3v2H8zM12 15h2v3h-2zM15 15h3v2h-3zM19 16h2v5h-2zM8 18h3v3H8zM14 19h4v2h-4z"/></svg>
+            <div class="col-4">
+              <span class="caps">Show at the gate</span>
+              <span class="sg t-24 fw-7">₦15,000</span>
+              <span class="t-11 c-4">Paid · Card</span>
+            </div>
+          </div>
+          <div class="inner row-between squad-row">
+            <div class="col-2"><span class="t-13 fw-7">Your squad</span><span class="t-11 c-2">7 of 10 joined</span></div>
+            <div class="avatars">
+              <span class="avatar avatar--sm avatar--green">TA</span><span class="avatar avatar--sm avatar--teal">AE</span><span class="avatar avatar--sm avatar--violet">CO</span><span class="avatar avatar--sm avatar--muted">+4</span>
+            </div>
+          </div>
+          <div class="fake-btn fake-btn--sm mt-auto"><svg class="ic ic--bold" width="16" height="16"><use href="#i-share"/></svg>Invite your squad</div>
+        </div>
+        <div class="float-chip float-chip--hero">
+          <span class="chip-icon"><svg class="ic" width="20" height="20"><use href="#i-shield"/></svg></span>
+          <div class="col-2"><span class="t-13 fw-7">Payment held safely</span><span class="t-12 c-2">until the arena confirms</span></div>
+        </div>
+      </div>
     </div>
-    <!--  Second page ending   //-->
+  </section>
 
-
-    <div class="third-page-container">
-        <div class="third-page-container-first-section">
-            <div class="third-page-container-first-section-main-left-area">
-                <div class="third-page-container-first-section-main-left-area">
-                    <div class="third-page-container-first-section-features-badge">
-                        <span>Features</span>
-                    </div>
-                    <div class="third-page-container-first-section-main-text"><span>Why Ballers?</span></div>
-                    <div class="third-page-container-first-section-sub-text"><span>Ballers simplifies booking, managing venues, hosting tournaments, and tracking players, all while connecting the sports community.</span>
-                    </div>
-                </div>
-            </div>
-            <div class="third-page-container-first-section-main-right-area">
-                <img id="scrollLeft" src="assets/images/_Testiomonial-carousel_arrow.svg" alt="Frame">
-                <img id="scrollRight" src="assets/images/_Testiomonial-carousel-arrow.svg" alt="Frame">
-            </div>
-        </div>
-        <div class="third-page-second-section-cards-container">
-            <div class="third-page-card-container">
-                <img src="assets/images/woman-holding-basketball.jpg" alt="Frame">
-                <div class="third-page-card-container-text-icon-area">
-                    <div class="third-page-card-container-text-area">
-                        <div class="third-page-card-container-text-top">Easy Booking for Players</div>
-                        <div class="third-page-card-container-text-bottom">Find and book available sports arenas
-                        instantly.
-                        </div>
-                    </div>
-                    <img src="assets/images/bhq-logo-black.png" alt="">
-                </div>
-            </div>
-            <div class="third-page-card-container">
-                <img src="assets/images/football-stadium.jpg" alt="Frame">
-                <div class="third-page-card-container-text-icon-area">
-                    <div class="third-page-card-container-text-area">
-                        <div class="third-page-card-container-text-top">Effortless Venue Management</div>
-                        <div class="third-page-card-container-text-bottom">Arena owners control schedules, bookings, and
-                            payments seamlessly.
-                        </div>
-                    </div>
-                    <img src="assets/images/bhq-logo-black.png" alt="">
-                </div>
-            </div>
-            <div class="third-page-card-container">
-                <img src="assets/images/happy-football-players.jpg" alt="Frame">
-                <div class="third-page-card-container-text-icon-area">
-                    <div class="third-page-card-container-text-area">
-                        <div class="third-page-card-container-text-top">Tournament Hosting Made Simple</div>
-                        <div class="third-page-card-container-text-bottom">Organize tournaments, track results, and
-                            manage participants easily.
-                        </div>
-                    </div>
-                    <img src="assets/images/bhq-logo-black.png" alt="">
-                </div>
-            </div>
-            <div class="third-page-card-container">
-                <img src="assets/images/closeup-team-shake.jpg" alt="Frame">
-                <div class="third-page-card-container-text-icon-area">
-                    <div class="third-page-card-container-text-area">
-                        <div class="third-page-card-container-text-top">Connect & Grow the Sports Community</div>
-                        <div class="third-page-card-container-text-bottom">Foster local talent scouting and networking
-                        among players, owners, and officials.
-                        </div>
-                    </div>
-                    <img src="assets/images/bhq-logo-black.png" alt="">
-                </div>
-            </div>
-            <div class="third-page-card-container">
-                <img src="assets/images/african-man-with-curly-hair.jpg" alt="Frame">
-                <div class="third-page-card-container-text-icon-area">
-                    <div class="third-page-card-container-text-area">
-                        <div class="third-page-card-container-text-top">Real-Time Player & Referee Tracking</div>
-                        <div class="third-page-card-container-text-bottom">Monitor player stats and referee assignments
-                            live.
-                        </div>
-                    </div>
-                    <img src="assets/images/bhq-logo-black.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="get-app-buttons-container">
-            <img id="google-play-button" src="assets/images/google-play-icon-badge.svg" alt="Get App Download Button">
-            <img id="app-store-button" src="assets/images/mobile-app-store-badge.svg" alt="Get App Download Button">
-        </div>
+  <!-- ================= FOUNDING ARENAS ================= -->
+  <section class="founders" aria-label="Founding arenas">
+    <div class="container founders__inner">
+      <span class="caps eyebrow--muted founders__label">Founding arenas</span>
+      <div class="founders__logos">
+        <div class="logo-slot">[ARENA LOGO]</div>
+        <div class="logo-slot">[ARENA LOGO]</div>
+        <div class="logo-slot">[ARENA LOGO]</div>
+        <div class="logo-slot">[ARENA LOGO]</div>
+        <div class="logo-slot">[ARENA LOGO]</div>
+      </div>
     </div>
+  </section>
 
-    <div class="fourth-page-container">
-        <div class="fourth-page-image">
-            <img src="assets/images/Leg-ball.png" alt="Juggler">
+  <!-- ================= PROBLEM ================= -->
+  <section class="section" aria-labelledby="problem-title">
+    <div class="container stack gap-56">
+      <div class="section-head">
+        <div class="stack gap-16 max-700">
+          <span class="caps eyebrow">The old way</span>
+          <h2 class="h2" id="problem-title">Booking a court shouldn't take twenty WhatsApp messages.</h2>
         </div>
-        <div class="fourth-page-body-icon-container">
-            <div class="fourth-page-body">
-                <p>
-                    Easily book sessions, manage venues, and track games &dash;
-                </p>
-                <span>
-            Getting started is easy
-          </span>
-            </div>
-            <div class="fourth-page-icons">
-                <div class="fourth-page-icon-single">
-                    <img src="assets/images/Icon.svg" alt="phone">
-                    <p>Players browse and book sports sessions.</p>
-                </div>
-                <div class="fourth-page-icon-single">
-                    <img src="assets/images/Icon-1.svg" alt="ticket">
-                    <p>Arena owners manage venue availability and bookings.</p>
-                </div>
-                <div class="fourth-page-icon-single">
-                    <img src="assets/images/activity.svg" alt="activity">
-                    <p>Sports officials track games and manage referees.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="fourth-page-logo">
-            <img src="assets/images/Icon-White-1.svg" alt="White-logo">
-        </div>
+        <p class="lead max-400">Right now, finding a pitch in Lagos means knowing someone who knows the manager. We built BallersHQ to fix that.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card problem-card">
+          <div class="problem-card__body">
+            <span class="icon-tile icon-tile--neutral"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <h3 class="h3">"Is the pitch free Saturday?"</h3>
+            <p class="body">Hours of calls and chats with the manager just to find an open slot.</p>
+          </div>
+          <p class="problem-card__fix"><svg class="ic c-green" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>See live availability and book in minutes.</p>
+        </article>
+        <article class="card problem-card">
+          <div class="problem-card__body">
+            <span class="icon-tile icon-tile--neutral"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-cash"/></svg></span>
+            <h3 class="h3">Cash, no receipt, no refund</h3>
+            <p class="body">You pay at the gate and hope. If it's cancelled, good luck getting your money back.</p>
+          </div>
+          <p class="problem-card__fix"><svg class="ic c-green" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>Pay by card, transfer or wallet. Refunds are automatic.</p>
+        </article>
+        <article class="card problem-card">
+          <div class="problem-card__body">
+            <span class="icon-tile icon-tile--neutral"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-cal-x"/></svg></span>
+            <h3 class="h3">Double-booked on arrival</h3>
+            <p class="body">Your squad shows up and another team is already on the pitch.</p>
+          </div>
+          <p class="problem-card__fix"><svg class="ic c-green" width="20" height="20" aria-hidden="true"><use href="#i-arrow"/></svg>The arena confirms your slot. Your QR ticket proves it.</p>
+        </article>
+      </div>
     </div>
-    <div class="fifth-page-container"></div>
+  </section>
 
-    <div class="sixth-page-container">
-        <div class="sixth-page-image">
-            <img src="assets/images/woman-holding-basketball.jpg" alt="Basket Baller">
-            <div class="sixth-page-logo">
-                <img src="assets/images/Green-logo.svg" alt="Green Logo">
-            </div>
-        </div>
-        <div class="sixth-page-body">
-            <div>
-                <p>Join Nigeria's Sports Revolution</p>
-            </div>
-            <div class="get-app-container">
-                <a class="google-play" href="#googlePlay">
-                    <img src="assets/images/google-play-icon-badge.svg" alt="Google Play">
-                </a>
-                <a class="app-store" href="#appleStore">
-                    <img src="assets/images/mobile-app-store-badge.svg" alt="Apple Store">
-                </a>
-            </div>
-            <div class="sixth-page-form">
-                <form class="subscribe-form" id="notifyForm">
-                    <fieldset class="sixth-page-form-radio-container">
-                        <div class="sixth-page-form-radio left-radio">
-                            <div>
-                                <div class="radio">
-                                    <input type="radio" name="userType" value="BALLER" hidden="true"
-                                    id="ballers">
-                                </div>
-                                <label for="ballers">I'm a Baller</label>
-                            </div>
-                            <img src="assets/images/Baller.gif" alt="Player">
-                        </div>
-                        <div class="sixth-page-form-radio right-radio">
-                            <div>
-                                <div class="radio">
-                                    <input type="radio" name="userType" id="owners" value="CLIENT"
-                                    hidden="true">
-                                </div>
-                                <label for="owners">I'm an Arena Owner</label>
-                            </div>
-                            <img src="assets/images/Basketball.gif" alt="Basketball-icon">
-                        </div>
-                    </fieldset>
-                    <fieldset class="sixth-page-form-email-number-container">
-                        <label hidden for="email">Email:</label>
-                        <div class="sixth-page-form-email-number">
-                            <img src="assets/images/Icon-mail.svg" alt="Mail">
-                            <input type="email" id="email" name="email" placeholder="Enter your email address">
-                        </div>
-                        <span>or</span>
-                        <label hidden for="phone">Mobile Number:</label>
-                        <div class="sixth-page-form-email-number">
-                            <img src="assets/images/Icon-phone.svg" alt="Phone">
-                            <input type="tel" id="phone" name="number" placeholder="Enter your whatsapp number">
-                        </div>
-
-                        <button  type="submit">
-                            Subscribe
-                            <img src="assets/images/Vector.svg" alt="Arrow right">
-                        </button>
-                    </fieldset>
-                    <div class="message" id="message"></div>
-                </form>
-            </div>
-        </div>
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section section--alt how" id="how-it-works" aria-labelledby="how-title">
+    <div class="container stack gap-56">
+      <div class="section-head section-head--center">
+        <span class="caps eyebrow">How it works</span>
+        <h2 class="h2" id="how-title">From group chat to kick-off in four steps</h2>
+      </div>
+      <ol class="grid grid-4">
+        <li class="card step-card">
+          <div class="row-between"><span class="icon-tile icon-tile--round"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-search"/></svg></span><span class="step-card__num" aria-hidden="true">01</span></div>
+          <div class="step-card__text"><h3 class="h3 h3--sm">Find a court</h3><p class="body">Filter by sport, area and time. See prices and open slots up front.</p></div>
+        </li>
+        <li class="card step-card">
+          <div class="row-between"><span class="icon-tile icon-tile--round"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-card"/></svg></span><span class="step-card__num" aria-hidden="true">02</span></div>
+          <div class="step-card__text"><h3 class="h3 h3--sm">Book &amp; pay</h3><p class="body">Card, bank transfer or wallet. Your money is held until the arena says yes.</p></div>
+        </li>
+        <li class="card step-card">
+          <div class="row-between"><span class="icon-tile icon-tile--round"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-check-circle"/></svg></span><span class="step-card__num" aria-hidden="true">03</span></div>
+          <div class="step-card__text"><h3 class="h3 h3--sm">Arena confirms</h3><p class="body">You get a booking reference and a QR ticket. If they decline, you're refunded in full.</p></div>
+        </li>
+        <li class="card step-card">
+          <div class="row-between"><span class="icon-tile icon-tile--round icon-tile--solid"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-scan"/></svg></span><span class="step-card__num" aria-hidden="true">04</span></div>
+          <div class="step-card__text"><h3 class="h3 h3--sm">Scan in &amp; play</h3><p class="body">Show your QR at the gate. No arguments about who booked the pitch.</p></div>
+        </li>
+      </ol>
     </div>
-    <div class="seventh-page-container">
-        <div class="seventh-page-header-nav-bar-container">
-            <div class="seventh-page-header-nav-bar">
+  </section>
 
-                <div class="logo-icon-and-text">
-                  <img src="assets/images/bhq-logo-green-black-bg.jpg" alt="Baller HQ">
-                  <span>BallersHQ</span>
-                </div>
-                <div class="seventh-page-nav-bar">
-                  <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="privacy.html">Privacy</a></li>
-                        <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-
-                    </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="social-media-icons">
-                <img src="assets/images/instagram.svg" alt="Instagram">
-                <img src="assets/images/twitter.svg" alt="Twitter">
-<!--                <img src="assets/images/tiktok.svg" alt="Tiktok">-->
-<!--                <img src="assets/images/Social-icon.svg" alt="Facebook">-->
-            </div>
+  <!-- ================= FOR PLAYERS ================= -->
+  <section class="section" id="players" aria-labelledby="players-title">
+    <div class="container stack gap-56">
+      <div class="section-head">
+        <div class="stack gap-16 max-720">
+          <span class="caps eyebrow">For ballers</span>
+          <h2 class="h2" id="players-title">No squad? No problem. Find a game near you tonight.</h2>
         </div>
-        <p class="seventh-page-body">BallersHQ</p>
+        <p class="lead max-400">Book the whole pitch with your squad, or just turn up for one spot in a public game.</p>
+      </div>
 
+      <div class="grid grid-3">
+        <!-- Public games -->
+        <article class="card card--xl card--glow feature-hero span-2">
+          <div class="feature-hero__copy">
+            <span class="icon-tile"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3 class="h3 h3--lg">Join public games. Pay for just your spot.</h3>
+            <p class="body t-16">Browse open sessions near you and grab one spot. No need to book the whole pitch or find nine other people. Hosting your own? Keep it private for your squad or open it to everyone.</p>
+          </div>
+          <div class="feature-hero__mock" aria-hidden="true">
+            <div class="inner game-card">
+              <div class="row-between"><span class="badge badge--sm badge--cyan">Public game</span><span class="t-12 c-2">Tonight · 7 PM · 1.2 km</span></div>
+              <span class="t-17 fw-7">5-a-side at Lekki Phase 1</span>
+              <div class="row-between">
+                <div class="avatars"><span class="avatar avatar--green">TA</span><span class="avatar avatar--teal">AE</span><span class="avatar avatar--violet">CO</span><span class="avatar avatar--muted">+5</span></div>
+                <span class="t-13 fw-6 c-green">2 spots left</span>
+              </div>
+              <div class="price-bar"><span class="sg t-18 fw-7">₦2,000 <span class="t-12 c-2 fw-5">/ spot</span></span><span class="price-bar__btn">Join game</span></div>
+            </div>
+            <div class="inner list-row list-row--lg"><span class="t-14 fw-6">Basketball run · Yaba</span><span class="t-12 c-2">Sat · 4 PM · <span class="sg c-text fw-7">₦1,500</span></span></div>
+          </div>
+        </article>
 
+        <!-- Near you -->
+        <article class="card card--xl feature-card">
+          <span class="icon-tile"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <h3 class="h3">Find courts close to you</h3>
+          <p class="body">See verified arenas nearby, sorted by distance, with prices and open slots.</p>
+          <div class="feature-card__foot stack gap-8" aria-hidden="true">
+            <div class="inner list-row"><div class="col-2"><span class="t-14 fw-6">Surulere AstroTurf</span><span class="t-12 c-2">from <span class="sg">₦12,000</span></span></div><span class="sg t-13 fw-7 c-green">0.8 km</span></div>
+            <div class="inner list-row"><div class="col-2"><span class="t-14 fw-6">Yaba Hoops Court</span><span class="t-12 c-2">from <span class="sg">₦8,000</span></span></div><span class="sg t-13 fw-7 c-green">2.4 km</span></div>
+          </div>
+        </article>
+
+        <!-- Ratings -->
+        <article class="card card--xl feature-card">
+          <span class="icon-tile"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <h3 class="h3">Meet and rate new players</h3>
+          <p class="body">After a game, rate the people you actually played with. Ratings come from teammates, not self-hype.</p>
+          <div class="feature-card__foot inner stack gap-12 rating-card" aria-hidden="true">
+            <div class="row-10"><span class="avatar avatar--md avatar--teal">AE</span><div class="col"><span class="t-14 fw-7">Amaka E.</span><span class="t-11 c-2">Rated by 23 players</span></div></div>
+            <div class="rating">
+              <span>Pace</span><span class="bar"><span class="bar__fill w-92"></span></span><span class="sg c-text fw-7">4.6</span>
+              <span>Passing</span><span class="bar"><span class="bar__fill w-88"></span></span><span class="sg c-text fw-7">4.4</span>
+              <span>Finishing</span><span class="bar"><span class="bar__fill w-82"></span></span><span class="sg c-text fw-7">4.1</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Wallet -->
+        <article class="card card--xl feature-card">
+          <span class="icon-tile"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-wallet"/></svg></span>
+          <h3 class="h3">A wallet built for ballers</h3>
+          <p class="body">Top up once, book in one tap, send money to teammates, and withdraw your earnings to your bank. Protected by your own PIN.</p>
+        </article>
+
+        <!-- Communities -->
+        <article class="card card--xl feature-card">
+          <span class="icon-tile"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-globe"/></svg></span>
+          <h3 class="h3">Communities &amp; referrals</h3>
+          <p class="body">Join your sport's crowd in your area and keep the banter going. Bring friends and get [REFERRAL REWARD] when they complete their first booking.</p>
+        </article>
+
+        <!-- Coming soon -->
+        <article class="card card--xl card--soon feature-card span-3">
+          <div class="row-between">
+            <span class="icon-tile icon-tile--amber"><svg class="ic" width="24" height="24" aria-hidden="true"><use href="#i-cal-plus"/></svg></span>
+            <span class="badge badge--amber">Coming soon</span>
+          </div>
+          <h3 class="h3">"Who get this set?"</h3>
+          <p class="body">Post when you're free to play, and find players near you who are free at the same time.</p>
+        </article>
+      </div>
     </div>
+  </section>
 
+  <!-- ================= SQUAD CHIP-IN ================= -->
+  <section class="section section--top-line glow-left" id="chip-in" aria-labelledby="chipin-title">
+    <div class="container split split--media-left">
+      <div class="split__copy stack gap-36">
+        <div class="stack gap-16">
+          <span class="caps eyebrow">Squad chip-in</span>
+          <h2 class="h2" id="chipin-title">Pick the pitch. Share the link. Everyone pays their share.</h2>
+          <p class="lead">Stop fronting the whole bill and chasing transfers on WhatsApp. Book a slot, send your squad an invite link, and each person pays their part straight into the booking.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__num" aria-hidden="true">1</span><div class="col-4"><h3 class="step__title">Pick an arena and a slot</h3><p class="body">Choose how many people are splitting and set a deadline. We work out each person's share.</p></div></li>
+          <li class="step"><span class="step__num" aria-hidden="true">2</span><div class="col-4"><h3 class="step__title">Share the invite link</h3><p class="body">Drop it in the group chat. Everyone can see who's paid and how much is left.</p></div></li>
+          <li class="step"><span class="step__num step__num--active" aria-hidden="true">3</span><div class="col-4"><h3 class="step__title">Everyone pays, the booking locks in</h3><p class="body">Once the total is in, your slot is booked. If it isn't reached by the deadline, everyone gets their money back.</p></div></li>
+        </ol>
+        <p class="live-strip"><span class="live-strip__icon" aria-hidden="true"><svg class="ic" width="20" height="20"><use href="#i-users"/></svg></span><span><span class="text-strong">Pay for more than one spot.</span> Cover a friend who's short this week, pay for your plus-one, or cover the rest of the bill in one go.</span></p>
+      </div>
 
-</div>
-<script src="assets/js/ballers-hq.js"></script>
+      <div class="split__media" aria-hidden="true">
+        <div class="panel">
+          <div class="row-between"><span class="panel__title">Group fund</span><span class="badge badge--sm badge--green">Active</span></div>
+          <div class="inner row-between panel-pad">
+            <div class="col-2"><span class="t-16 fw-7">Pitch A · Surulere AstroTurf</span><span class="t-13 c-2">Sat 14 Sep · 8:00 – 9:00 PM</span></div>
+            <span class="sg t-22 fw-7">₦14,000</span>
+          </div>
+          <div class="stack gap-8">
+            <div class="progress"><span class="bar__fill w-50"></span></div>
+            <div class="row-between t-13"><span class="fw-6"><span class="sg">₦7,000</span> <span class="c-2 fw-5">of <span class="sg">₦14,000</span></span></span><span class="c-amber fw-6">Expires in 14h 32m</span></div>
+          </div>
+          <div class="stack gap-8">
+            <div class="inner contrib">
+              <span class="avatar avatar--md avatar--green">CO</span>
+              <div class="contrib__main"><span class="t-14 fw-7">Chidi O. <span class="t-11 fw-6 c-green">· Organiser</span></span><span class="t-12 c-2">Paid <span class="sg">₦3,500</span></span></div>
+              <svg class="ic c-green" width="20" height="20"><use href="#i-check-circle"/></svg>
+            </div>
+            <div class="inner contrib">
+              <span class="avatar avatar--md avatar--teal">TA</span>
+              <div class="contrib__main"><span class="t-14 fw-7">Tobi A.</span><span class="t-12 c-2">Paid <span class="sg">₦3,500</span></span></div>
+              <svg class="ic c-green" width="20" height="20"><use href="#i-check-circle"/></svg>
+            </div>
+            <div class="contrib contrib--open">
+              <span class="plus-ring"><svg class="ic ic--bold" width="16" height="16"><use href="#i-plus"/></svg></span>
+              <div class="contrib__main"><span class="t-14 fw-7">2 spots open</span><span class="t-12 c-2"><span class="sg">₦3,500</span> each</span></div>
+              <span class="share-btn"><svg class="ic ic--bold" width="14" height="14"><use href="#i-share"/></svg>Share link</span>
+            </div>
+          </div>
+          <div class="payfor">
+            <span class="t-12 c-2">Pay for</span>
+            <div class="payfor__opts">
+              <span class="payfor__opt"><span>Just me</span><span class="sg payfor__amt">₦3,500</span></span>
+              <span class="payfor__opt payfor__opt--on"><span><span class="hide-sm">Me + a friend</span><span class="show-sm">2 spots</span></span><span class="sg payfor__amt">₦7,000</span></span>
+              <span class="payfor__opt"><span>Cover <span class="hide-sm">the </span>rest</span><span class="sg payfor__amt">₦7,000</span></span>
+            </div>
+            <span class="payfor__cta">Pay <span class="sg">₦7,000</span> for 2 spots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLAIM & EARN ================= -->
+  <section class="section section--top-line glow-right" id="claim" aria-labelledby="claim-title">
+    <div class="container split">
+      <div class="split__copy stack gap-36">
+        <div class="stack gap-16">
+          <span class="caps eyebrow">Already have a regular slot?</span>
+          <h2 class="h2" id="claim-title">Low turnout this week? Sell the empty spots.</h2>
+          <p class="lead">If your squad already pays an arena for a weekly slot, claim it on BallersHQ. On days people can't make it, open a few spots to the public and get your money back.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__num" aria-hidden="true">1</span><div class="col-4"><h3 class="step__title">Claim your slot</h3><p class="body">Tell us which slot is yours. The arena confirms it, and every week of that slot is now yours to manage.</p></div></li>
+          <li class="step"><span class="step__num" aria-hidden="true">2</span><div class="col-4"><h3 class="step__title">Open as many spots as you want</h3><p class="body">Keep it private, invite-only, or make a set number of spots public. You choose the price per spot.</p></div></li>
+          <li class="step"><span class="step__num step__num--active" aria-hidden="true">3</span><div class="col-4"><h3 class="step__title">Get paid after the game</h3><p class="body">Players pay upfront. We hold the money safely and release it to your wallet once the game is played.</p></div></li>
+        </ol>
+      </div>
+
+      <div class="split__media" aria-hidden="true">
+        <div class="panel">
+          <div class="row-between"><span class="panel__title">My slots</span><span class="badge badge--sm badge--emerald"><svg class="ic ic--heavy" width="12" height="12"><use href="#i-check"/></svg>Claimed</span></div>
+          <div class="inner stack gap-4 panel-pad">
+            <span class="caps t-10 c-cyan">Every Thursday</span>
+            <span class="t-18 fw-7">Pitch B · Lekki Sports Arena</span>
+            <span class="t-13 c-2">7:00 – 9:00 PM · 10 players · This week: 6 confirmed</span>
+          </div>
+          <div class="segmented-mock"><span>Private</span><span>Invite only</span><span class="is-on">Public</span></div>
+          <div class="grid grid-2 gap-12 keep-2">
+            <div class="inner stack gap-8 panel-pad-sm">
+              <span class="t-12 c-2">Spots to open</span>
+              <div class="stepper"><span class="stepper__btn"><svg class="ic ic--bold" width="16" height="16"><use href="#i-minus"/></svg></span><span class="sg t-26 fw-7">4</span><span class="stepper__btn stepper__btn--plus"><svg class="ic ic--bold" width="16" height="16"><use href="#i-plus"/></svg></span></div>
+            </div>
+            <div class="inner stack gap-8 panel-pad-sm">
+              <span class="t-12 c-2">Price per spot</span>
+              <span class="sg t-26 fw-7 stepper">₦2,500</span>
+            </div>
+          </div>
+          <div class="earn-row">
+            <div class="col-2"><span class="t-13 c-sage">You could earn this week</span><span class="t-11 c-2">Paid to your wallet after the game</span></div>
+            <span class="sg t-32 fw-7 c-green">₦10,000</span>
+          </div>
+          <div class="fake-btn">Open 4 spots to the public</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOR ARENA OWNERS ================= -->
+  <section class="section section--alt glow-cyan" id="arenas" aria-labelledby="arenas-title">
+    <div class="container split split--media-left split--arenas">
+      <div class="split__copy stack gap-28">
+        <div class="stack gap-16">
+          <span class="caps eyebrow eyebrow--cyan">For arena owners</span>
+          <h2 class="h2 h2--md" id="arenas-title">Fill your pitches. Keep your walk-ins. Get paid on time.</h2>
+          <p class="lead">List your arena on BallersHQ and let players book and pay online. You stay in control of every slot.</p>
+        </div>
+        <ul class="benefits">
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-check-circle"/></svg><div class="col-4"><h3 class="benefit__title">You approve every booking</h3><p class="body-sm">Accept or decline, or switch on auto-accept for any pitch.</p></div></li>
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-cal"/></svg><div class="col-4"><h3 class="benefit__title">Keep your regulars</h3><p class="body-sm">Block slots for walk-ins and weekly teams, or upload them in bulk from Excel.</p></div></li>
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-scan"/></svg><div class="col-4"><h3 class="benefit__title">Scan tickets at the gate</h3><p class="body-sm">Check players in with a QR scan. No disputes over who paid.</p></div></li>
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-bank"/></svg><div class="col-4"><h3 class="benefit__title">Earnings straight to your bank</h3><p class="body-sm">Track revenue in your dashboard and withdraw with no fees.</p></div></li>
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-tag"/></svg><div class="col-4"><h3 class="benefit__title">Run promos on quiet hours</h3><p class="body-sm">Offer a percentage or flat discount to fill empty slots.</p></div></li>
+          <li class="benefit"><svg class="ic" width="22" height="22" aria-hidden="true"><use href="#i-pin"/></svg><div class="col-4"><h3 class="benefit__title">Get found by new players</h3><p class="body-sm">Verified arenas show up to players searching nearby.</p></div></li>
+        </ul>
+        <div class="row-20 arena-cta">
+          <a class="btn btn--primary btn--md js-arena-cta" href="#waitlist">List your arena <svg class="ic ic--bold" width="18" height="18" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <span class="t-14 c-3">Joins the waitlist as an arena owner</span>
+        </div>
+      </div>
+
+      <div class="split__media" aria-hidden="true">
+        <div class="panel">
+          <div class="row-between">
+            <div class="col-2"><span class="t-13 c-2">Today's earnings</span><span class="sg t-36 fw-7">₦84,500</span></div>
+            <span class="ghost-pill"><svg class="ic" width="16" height="16"><use href="#i-bank"/></svg>Withdraw</span>
+          </div>
+          <div class="request">
+            <div class="row-between"><span class="caps t-10 c-amber">New booking request</span><span class="sg t-12 c-2">Respond in 23:41</span></div>
+            <div class="row-between">
+              <div class="col-2"><span class="t-16 fw-7">Pitch A · Sat 8 – 9 PM</span><span class="t-13 c-2">Tobi A. · 5-a-side</span></div>
+              <span class="sg t-20 fw-7">₦15,000</span>
+            </div>
+            <div class="btn-pair"><span class="ghost">Decline</span><span class="go">Accept</span></div>
+          </div>
+          <div class="inner stack gap-8 panel-pad-sm">
+            <span class="caps t-10 c-2">Pitch A · Saturday</span>
+            <div class="slots"><span class="slot slot--booked">5 PM</span><span class="slot slot--booked">6 PM</span><span class="slot slot--blocked">7 PM</span><span class="slot slot--pending">8 PM</span></div>
+            <div class="legend"><span><i class="legend--green"></i>Booked</span><span><i class="legend--grey"></i>Blocked</span><span><i class="legend--amber"></i>Pending</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SPORTS ================= -->
+  <section class="section sports-section" aria-labelledby="sports-title">
+    <div class="container stack gap-28 sports-wrap">
+      <h2 class="caps c-2" id="sports-title">Book courts for</h2>
+      <ul class="sports">
+        <li class="sport sport--on">Football</li>
+        <li class="sport">Basketball</li>
+        <li class="sport">Tennis</li>
+        <li class="sport">Volleyball</li>
+        <li class="sport">Squash</li>
+        <li class="sport">Badminton</li>
+        <li class="sport sport--extra">Table tennis</li>
+        <li class="sport sport--extra">Hockey</li>
+        <li class="sport sport--extra">Rugby</li>
+        <li class="sport sport--more">+ more</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= TRUST ================= -->
+  <section aria-labelledby="trust-title">
+    <div class="container">
+      <div class="card trust stack gap-36">
+        <div class="section-head">
+          <h2 class="h2 h2--sm max-560" id="trust-title">Your money is safe with us</h2>
+          <p class="body t-16 max-400 trust__head-copy">Every booking is protected from the moment you pay until the final whistle.</p>
+        </div>
+        <ul class="grid grid-4 trust-grid">
+          <li class="trust__item"><svg class="ic" width="28" height="28" aria-hidden="true"><use href="#i-shield"/></svg><h3 class="trust__title">Held until confirmed</h3><p class="body-sm">The arena isn't paid until they confirm your slot.</p></li>
+          <li class="trust__item"><svg class="ic" width="28" height="28" aria-hidden="true"><use href="#i-refund"/></svg><h3 class="trust__title">Full refund if declined</h3><p class="body-sm">If the arena says no or cancels, you get every naira back.</p></li>
+          <li class="trust__item"><svg class="ic" width="28" height="28" aria-hidden="true"><use href="#i-card"/></svg><h3 class="trust__title">Secure payments</h3><p class="body-sm">Card and transfer payments are processed by Flutterwave.</p></li>
+          <li class="trust__item"><svg class="ic" width="28" height="28" aria-hidden="true"><use href="#i-lock"/></svg><h3 class="trust__title">PIN-protected wallet</h3><p class="body-sm">Every wallet payment and withdrawal needs your PIN.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="container faq">
+      <div class="faq__head">
+        <span class="caps eyebrow">FAQ</span>
+        <h2 class="h2 h2--md" id="faq-title">Questions before kick-off?</h2>
+        <p class="body t-16">Can't find your answer? Email <a href="mailto:support@ballershq.com">support@ballershq.com</a>.</p>
+      </div>
+      <div class="faq__list">
+        <details open>
+          <summary>When and where are you launching?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>We're starting in Lagos on [LAUNCH DATE], with more cities to follow. Join the waitlist and we'll tell you the moment the app is live.</p>
+        </details>
+        <details>
+          <summary>What happens if the arena doesn't confirm my booking?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Your payment is held until the arena confirms. If the arena declines, you're refunded in full and we can suggest another slot. If they don't respond in time, our team steps in to sort it out.</p>
+        </details>
+        <details>
+          <summary>Can I cancel a booking?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Yes. How much of the court fee you get back depends on how early you cancel: [CANCELLATION TIERS — confirm]. If the arena cancels, you get a full refund.</p>
+        </details>
+        <details>
+          <summary>Can I make money from my regular slot?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Yes. Claim the slot your squad already pays for, and once the arena confirms it's yours you can open a set number of spots to the public at your own price. Players pay upfront, and the money is released to your wallet after the game. Paid spots aren't refunded if someone doesn't show up.</p>
+        </details>
+        <details>
+          <summary>How do I get money out of my wallet?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Withdraw to your Nigerian bank account from the app. Withdrawals start from ₦1,000, have no fee, and usually arrive in 1–3 business days. Every withdrawal needs your wallet PIN.</p>
+        </details>
+        <details>
+          <summary>I own an arena. What does it cost to list?<svg class="ic ic--bold faq__icon" width="20" height="20" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>[ARENA PRICING]. Join the waitlist as an arena owner and we'll walk you through it before you go live.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="section section--cta" aria-labelledby="cta-title">
+    <div class="container">
+      <div class="cta">
+        <svg class="cta__lines" viewBox="0 0 1200 480" preserveAspectRatio="none" fill="none" stroke="#00E676" stroke-width="2" aria-hidden="true"><path d="M600 0v480"/><circle cx="600" cy="240" r="120"/><rect x="-2" y="120" width="140" height="240"/><rect x="1062" y="120" width="140" height="240"/></svg>
+        <h2 class="cta__title" id="cta-title">Be first on the pitch when we launch.</h2>
+        <p class="cta__lead">Join the waitlist as a baller or an arena owner. Early members get [EARLY-ACCESS PERK].</p>
+        <form class="cta-form js-waitlist" novalidate data-form="cta">
+          <input type="hidden" name="userType" value="BALLER">
+          <div class="inline-form">
+            <label class="sr-only" for="cta-email">Email address</label>
+            <input class="input" id="cta-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address" required>
+            <button class="btn btn--primary" type="submit"><span class="js-label">Join the waitlist</span></button>
+          </div>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand stack gap-14">
+        <img src="assets/img/logo.svg" alt="BallersHQ" width="170" height="26">
+        <span class="t-14 c-3">Book courts. Play more. Made in Lagos.</span>
+      </div>
+      <div class="footer__cols">
+        <nav class="footer__col footer__col--product" aria-label="Product">
+          <span class="caps">Product</span>
+          <a href="#players">For players</a><a href="#arenas">For arenas</a><a href="#how-it-works">How it works</a><a href="#faq">FAQ</a>
+        </nav>
+        <nav class="footer__col" aria-label="Legal">
+          <span class="caps">Legal</span>
+          <a href="terms-and-conditions.html">Terms of use</a><a href="privacy.html">Privacy policy</a><a href="#">Refund policy</a>
+        </nav>
+        <div class="footer__col">
+          <span class="caps">Contact</span>
+          <a href="mailto:support@ballershq.com"><svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-mail"/></svg>support@ballershq.com</a>
+          <a href="https://www.instagram.com/ballershq" rel="noopener"><svg class="ic" width="16" height="16" aria-hidden="true"><use href="#i-insta"/></svg>@ballershq</a>
+          <span>[WHATSAPP NUMBER]</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span class="js-year">2026</span> BallersHQ. All rights reserved.</span>
+      <span>Payments powered by Flutterwave</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-
