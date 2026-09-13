@@ -82,7 +82,7 @@ Point `ballershq.com` (and `www`) at the host through DNS in cPanel.
 ### Secondary pages
 - `privacy.html`, `terms-and-conditions.html`, `refund-policy.html`, `about-us.html` share the site header/footer and use `assets/css/pages.css`.
 - Content reflects the product as of 13 Sep 2026 (NDPA, Flutterwave, Firebase, Agora, Cloudinary/AWS, Resend, Anthropic support assistant, DigitalOcean; live cancellation tiers; chip-in; slot claims; disputes). **Have a lawyer review the Privacy Policy and Terms before launch.**
-- Open decisions baked in as defaults: minimum age 18; governing law Nigeria / FCT courts; account deletion handled by email request (no in-app deletion yet); legal contact = support@ballershq.com; address Amina Court, Abuja.
+- Open decisions baked in as defaults: minimum age 18; governing law Nigeria / FCT courts; account deletion handled by email request (no in-app deletion yet); legal contact = support@ballershq.com; no postal address published yet.
 
 ### Assets
 - [x] `assets/img/og-image.png`: 1200×630 social preview image
