@@ -186,4 +186,49 @@
         setStatus(form, "We couldn't reach BallersHQ. Check your connection and try again.", 'error');
       });
   }
+
+  /* ---------- Launch countdown (1 Oct 2026, 00:00 WAT) ---------- */
+  (function initCountdown() {
+    var boxes = document.querySelectorAll('.js-countdown');
+    var inlines = document.querySelectorAll('.js-countdown-inline');
+    var source = boxes[0] || inlines[0];
+    if (!source) return;
+    var launchAt = new Date(source.getAttribute('data-launch')).getTime();
+    if (isNaN(launchAt)) return;
+
+    function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+    function render() {
+      var remaining = Math.max(0, Math.floor((launchAt - Date.now()) / 1000));
+      var days = Math.floor(remaining / 86400);
+      var hours = Math.floor((remaining % 86400) / 3600);
+      var minutes = Math.floor((remaining % 3600) / 60);
+      var seconds = remaining % 60;
+      var live = remaining === 0;
+
+      Array.prototype.forEach.call(boxes, function (box) {
+        box.hidden = live;
+        if (live) return;
+        box.querySelector('[data-unit="days"]').textContent = pad(days);
+        box.querySelector('[data-unit="hours"]').textContent = pad(hours);
+        box.querySelector('[data-unit="minutes"]').textContent = pad(minutes);
+        box.querySelector('[data-unit="seconds"]').textContent = pad(seconds);
+        box.setAttribute('aria-label', days + ' days, ' + hours + ' hours and ' + minutes + ' minutes until launch');
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('.js-launch-label'), function (label) {
+        label.textContent = live ? "We're live in Abuja" : 'Launching in Abuja · 1 October';
+      });
+      Array.prototype.forEach.call(inlines, function (el) {
+        el.textContent = live
+          ? "We're live in Abuja"
+          : (days > 0 ? days + (days === 1 ? ' day' : ' days') + ' to go' : pad(hours) + ':' + pad(minutes) + ':' + pad(seconds) + ' to go') + ' · Launching in Abuja on 1 October';
+      });
+      return live;
+    }
+
+    if (render()) return;
+    var timer = setInterval(function () {
+      if (render()) clearInterval(timer);
+    }, 1000);
+  })();
 })();

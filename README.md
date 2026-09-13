@@ -70,7 +70,7 @@ Point `ballershq.com` (and `www`) at the host through DNS in cPanel.
 - [ ] **Peer ratings:** shown as a feature, but the app has no rating screens yet.
 
 ### Content placeholders still in the page
-- [ ] `[LAUNCH DATE]` (hero badge + FAQ)
+- [x] Launch date: 1 October 2026, Abuja (hero countdown + final CTA + FAQ; target `2026-10-01T00:00:00+01:00` in `data-launch`)
 - [ ] `[ARENA LOGO]` ×5 (founding arenas strip)
 - [ ] `[REFERRAL REWARD]` (₦500 is seeded in the backend; confirm who receives it)
 - [ ] `[EARLY-ACCESS PERK]` (final call to action)
