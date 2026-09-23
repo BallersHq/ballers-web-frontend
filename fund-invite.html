@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>You're invited to split a booking — BallersHQ</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A0E14">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    /* Fallback page for a /fund/:token Universal/App Link when the app isn't installed --
+       Android/iOS intercept this URL before it ever reaches the browser once the app is
+       installed (see apple-app-site-association / assetlinks.json), so this only ever
+       renders for people who don't have BallersHQ yet, or on desktop. */
+    .invite { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; text-align: center; padding: 40px var(--gutter); }
+    .invite__actions { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 360px; margin-top: 8px; }
+    .invite__divider { display: flex; align-items: center; gap: 12px; width: 100%; max-width: 360px; color: var(--text-3); font-size: 13px; margin-top: 8px; }
+    .invite__divider::before, .invite__divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+    .invite .cta-form { width: 100%; max-width: 360px; }
+  </style>
+</head>
+<body>
+  <main class="invite">
+    <a href="/" aria-label="BallersHQ home"><img src="/assets/img/logo.svg" alt="BallersHQ" width="196" height="30"></a>
+    <span class="badge badge--green">You're invited</span>
+    <h1 class="h2">Join the booking split on BallersHQ</h1>
+    <p class="lead max-560">Someone invited you to split a booking with their squad. Open the BallersHQ app to see the details and pay your share.</p>
+
+    <div class="invite__actions">
+      <a class="btn btn--primary btn--md js-open-app" href="#">Open in the BallersHQ app</a>
+    </div>
+
+    <div class="invite__divider">Don't have the app yet?</div>
+
+    <form class="cta-form js-waitlist" novalidate data-form="fund-invite">
+      <input type="hidden" name="userType" value="BALLER">
+      <p class="lead max-560" style="font-size:15px;">We're inviting players in Abuja first. Join the waitlist and we'll let you know the moment you can download it.</p>
+      <div class="inline-form">
+        <label class="sr-only" for="invite-email">Email address</label>
+        <input class="input" id="invite-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address" required>
+        <button class="btn btn--primary" type="submit"><span class="js-label">Join the waitlist</span></button>
+      </div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script>
+    // The token is whatever nginx's rewrite left in the address bar (e.g. /fund/abc123) --
+    // this page is served as a static file for any /fund/* path, so the URL itself still
+    // carries the real token even though the file on disk is fund-invite.html.
+    (function () {
+      var match = window.location.pathname.match(/^\/fund\/([^/]+)/);
+      var token = match ? match[1] : '';
+      var link = document.querySelector('.js-open-app');
+      if (link) link.href = 'com.ballershq://app/fund/' + encodeURIComponent(token);
+    })();
+  </script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
